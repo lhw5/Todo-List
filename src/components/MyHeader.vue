@@ -1,6 +1,6 @@
 <template>
   <div class="todo-header">
-    <input type="text" placeholder="请输入任务名称，敲回车键确认!" v-model="title" autofocus @keyup.enter="add" />
+    <input type="text" placeholder="请输入任务名称，敲回车键确认！" v-model="title" autofocus @keyup.enter="add" />
   </div>
 </template>
 
@@ -29,8 +29,12 @@ export default {
 </script>
 
 <style scoped>
+.todo-header {
+  width: 100%;
+}
 .todo-header input {
-  width: 560px;
+  box-sizing: border-box;
+  width: inherit;
   height: 28px;
   font-size: 14px;
   border: 1px solid #ccc;

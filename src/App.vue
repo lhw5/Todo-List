@@ -105,6 +105,7 @@ export default {
 
 <style>
 body {
+  margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -149,7 +150,6 @@ body {
 }
 
 .todo-container {
-  width: 600px;
   margin: 0 auto;
   background: rgba(156, 190, 255, 0.9);
 }
