@@ -83,14 +83,9 @@
         "use strict";
         o("a114")
     },
-    1840: function (t, e, o) {},
     "3f2e": function (t, e, o) {
         "use strict";
         o("aa40")
-    },
-    "4eda": function (t, e, o) {
-        "use strict";
-        o("1840")
     },
     "56d7": function (t, e, o) {
         "use strict";
@@ -177,15 +172,20 @@
                 }
             },
             d = c,
-            u = (o("ac41"), o("2877")),
-            f = Object(u["a"])(d, s, l, !1, null, "b695a63e", null),
-            h = f.exports,
-            p = function () {
+            u = (o("a0f5"), o("2877")),
+            f = Object(u["a"])(d, s, l, !1, null, "ac869a5e", null),
+            p = f.exports,
+            h = function () {
                 var t = this,
                     e = t.$createElement,
                     o = t._self._c || e;
                 return o("ul", {
                     staticClass: "todo-main"
+                }, [o("transition-group", {
+                    attrs: {
+                        name: "todo",
+                        appear: ""
+                    }
                 }, t._l(t.todos, (function (t) {
                     return o("MyItem", {
                         key: t.id,
@@ -193,7 +193,7 @@
                             todo: t
                         }
                     })
-                })), 1)
+                })), 1)], 1)
             },
             m = [],
             v = function () {
@@ -293,7 +293,7 @@
                 props: ["todos"]
             },
             g = _,
-            w = (o("4eda"), Object(u["a"])(g, p, m, !1, null, "8d9bf608", null)),
+            w = (o("955b"), Object(u["a"])(g, h, m, !1, null, "1e0834c6", null)),
             A = w.exports,
             x = function () {
                 var t = this,
@@ -373,7 +373,7 @@
             P = {
                 name: "App",
                 components: {
-                    MyHeader: h,
+                    MyHeader: p,
                     MyList: A,
                     MyFooter: C
                 },
@@ -449,12 +449,17 @@
         }).$mount("#app")
     },
     "85ec": function (t, e, o) {},
+    "955b": function (t, e, o) {
+        "use strict";
+        o("ed69")
+    },
+    a0f5: function (t, e, o) {
+        "use strict";
+        o("f472")
+    },
     a114: function (t, e, o) {},
     aa40: function (t, e, o) {},
-    ac41: function (t, e, o) {
-        "use strict";
-        o("f13f")
-    },
-    f13f: function (t, e, o) {}
+    ed69: function (t, e, o) {},
+    f472: function (t, e, o) {}
 });
-//# sourceMappingURL=app.a40ed3b6.js.map
+//# sourceMappingURL=app.da467e07.js.map
