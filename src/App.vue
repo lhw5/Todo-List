@@ -1,10 +1,8 @@
 <template>
     <div class="todo-container">
-      <div class="todo-wrap">
-        <MyHeader @addTodo="addTodo" />
-        <MyList :todos="todos" />
-        <MyFooter :todos="todos" @checkAllTodo="checkAllTodo" @clearAllTodo="clearAllTodo" />
-      </div>
+      <MyHeader @addTodo="addTodo" />
+      <MyList :todos="todos" />
+      <MyFooter :todos="todos" @checkAllTodo="checkAllTodo" @clearAllTodo="clearAllTodo" />
     </div>
 </template>
 
@@ -154,15 +152,12 @@ body {
 
 .todo-container {
   margin: 50px auto;
-  width: 400px;
+  padding: 10px;
+  width: 360px;
   color: #606266;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
-}
-
-.todo-container .todo-wrap {
-  padding: 20px;
 }
 
 input[type="checkbox"] {

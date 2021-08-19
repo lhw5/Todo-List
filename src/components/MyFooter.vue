@@ -5,7 +5,7 @@
     </label>
     <span>已完成{{doneTotal}}</span> /
     <span>全部{{total}}</span>
-    <button class="btn btn-danger" @click="clearAll">清除已完成任务</button>
+    <button class="btn btn-danger" @click="clearAll">清除已完成</button>
   </div>
 </template>
 

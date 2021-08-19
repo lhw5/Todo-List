@@ -1,6 +1,6 @@
 <template>
   <div class="todo-header">
-    <input type="text" placeholder="请输入任务名称，敲回车键确认！" v-model="title" autofocus maxlength="17" @keyup.enter="add" />
+    <input type="text" placeholder="请输入任务名称，敲回车键确认！" v-model="title" autofocus maxlength="15" @keyup.enter="add" />
   </div>
 </template>
 

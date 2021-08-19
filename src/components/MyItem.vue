@@ -1,11 +1,11 @@
 <template>
   <li>
     <label>
-      <input type="checkbox" :checked="todo.completed" @change="handleCheck(todo.id)" />
+      <input type="checkbox" :checked="todo.completed" @change="handleCheck(todo.id)" />&nbsp;
       <span v-show="!todo.isEdit">{{todo.title}}</span>
       <input
         type="text"
-        maxlength="17"
+        maxlength="15"
         v-show="todo.isEdit"
         :value="todo.title"
         @blur="handleBlur(todo,$event)"
