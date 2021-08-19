@@ -46,7 +46,6 @@ export default {
   height: 40px;
   line-height: 40px;
   padding-left: 6px;
-  margin-top: 5px;
 }
 
 .todo-footer label {

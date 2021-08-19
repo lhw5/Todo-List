@@ -100,6 +100,11 @@ export default {
 </script>
 
 <style>
+@media screen and (min-width:375px) and (max-width:1920px){
+  .todo-container{
+    width: 500px;
+  }
+}
 body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -153,7 +158,7 @@ body {
 .todo-container {
   margin: 50px auto;
   padding: 10px;
-  width: 360px;
+  /* width: 360px; */
   color: #606266;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
