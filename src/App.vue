@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="todo-container">
       <div class="todo-wrap">
         <MyHeader @addTodo="addTodo" />
@@ -7,7 +6,6 @@
         <MyFooter :todos="todos" @checkAllTodo="checkAllTodo" @clearAllTodo="clearAllTodo" />
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -107,6 +105,7 @@ export default {
 body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 
 .btn {
@@ -123,26 +122,30 @@ body {
 }
 
 .btn-danger {
+  position:absolute;
+  right: 2px;
   color: #fff;
-  background-color: #da4f49;
-  border: 1px solid #da4f45;
+  background-color: #F56C6C;
+  border: 1px solid #F56C6C;
 }
 
 .btn-edit {
+  position:absolute;
+  right: 56px;
   color: #fff;
   margin-right: 2px;
-  background-color: #45c745;
-  border: 1px solid #5ab66c;
+  background-color: #67C23A;
+  border: 1px solid #67C23A;
 }
 
 .btn-danger:hover {
   color: #fff;
-  background-color: #dd2e25;
+  opacity: .9;
 }
 
 .btn-edit:hover {
   color: #fff;
-  background-color: #45ce45;
+  opacity: .9;
 }
 
 .btn:focus {
@@ -150,14 +153,16 @@ body {
 }
 
 .todo-container {
-  margin: 0 auto;
-  background: rgba(156, 190, 255, 0.9);
+  margin: 50px auto;
+  width: 400px;
+  color: #606266;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 }
 
 .todo-container .todo-wrap {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 20px;
 }
 
 input[type="checkbox"] {
@@ -184,8 +189,8 @@ input[type="checkbox"]:after {
 
 input[type="checkbox"]:checked:after {
   content: "";
-  border-color: #037df3;
-  background-color: #037df3;
+  border-color: #409eff;
+  background-color: #409eff;
 }
 
 input[type="checkbox"]:checked:before {

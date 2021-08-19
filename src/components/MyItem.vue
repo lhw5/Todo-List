@@ -5,6 +5,7 @@
       <span v-show="!todo.isEdit">{{todo.title}}</span>
       <input
         type="text"
+        maxlength="17"
         v-show="todo.isEdit"
         :value="todo.title"
         @blur="handleBlur(todo,$event)"
@@ -55,11 +56,12 @@ export default {
 
 <style scoped>
 li {
+  position: relative;
   list-style: none;
   height: 36px;
   line-height: 36px;
   padding: 0 5px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #DCDFE6;
 }
 
 li label {
@@ -75,7 +77,6 @@ li label li input {
 }
 
 li button {
-  float: right;
   display: none;
   margin-top: 3px;
   border-radius: 3px;
@@ -90,7 +91,7 @@ li:last-child {
 }
 
 li:hover {
-  background: rgba(150, 155, 245, 0.5);
+  background: rgb(244, 244, 245);
 }
 
 li:hover button {

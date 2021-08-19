@@ -42,6 +42,7 @@ export default {
 
 <style scoped>
 .todo-footer {
+  position: relative;
   height: 40px;
   line-height: 40px;
   padding-left: 6px;
@@ -62,7 +63,6 @@ export default {
 }
 
 .todo-footer button {
-  float: right;
   margin-top: 5px;
   border-radius: 5px;
 }
