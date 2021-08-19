@@ -100,9 +100,19 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width:375px) and (max-width:1920px){
+@media screen and (min-width:1024px) and (max-width:1920px){
   .todo-container{
     width: 500px;
+  }
+}
+@media screen and (min-width:414px) and (max-width:1024px){
+  .todo-container{
+    width: 350px;
+  }
+}
+@media screen and (max-width:414px){
+  .todo-container{
+    width: 100%;
   }
 }
 body {
