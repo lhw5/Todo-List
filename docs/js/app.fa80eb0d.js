@@ -79,6 +79,10 @@
     "use strict";
     o("85ec")
   },
+  "2c63": function (t, e, o) {
+    "use strict";
+    o("8d43")
+  },
   3395: function (t, e, o) {
     "use strict";
     o("366d")
@@ -100,6 +104,8 @@
           o = t._self._c || e;
         return o("div", {
           staticClass: "todo-container"
+        }, [o("div", {
+          staticClass: "todo-wrap"
         }, [o("MyHeader", {
           on: {
             addTodo: t.addTodo
@@ -116,7 +122,7 @@
             checkAllTodo: t.checkAllTodo,
             clearAllTodo: t.clearAllTodo
           }
-        })], 1)
+        })], 1)])
       },
       r = [],
       s = (o("d81d"), o("159b"), o("4de4"), function () {
@@ -271,7 +277,7 @@
             this.$bus.$emit("checkTodo", t)
           },
           handleDelete: function (t) {
-            confirm("确定删除吗?") && this.$bus.$emit("deleteTodo", t)
+            confirm('确定删除："'.concat(this.todo.title, '" 吗?')) && this.$bus.$emit("deleteTodo", t)
           },
           handleEdit: function (t) {
             t.hasOwnProperty.call("isEdit") ? t.isEdit = !0 : this.$set(t, "isEdit", !0), this.$nextTick((function () {
@@ -285,7 +291,7 @@
         }
       },
       T = y,
-      g = (o("b9f9"), Object(u["a"])(T, v, b, !1, null, "74570b9f", null)),
+      g = (o("2c63"), Object(u["a"])(T, v, b, !1, null, "6e33de79", null)),
       $ = g.exports,
       _ = {
         name: "MyList",
@@ -371,13 +377,13 @@
       },
       M = O,
       j = (o("3395"), Object(u["a"])(M, A, E, !1, null, "c7293ab4", null)),
-      P = j.exports,
-      C = {
+      C = j.exports,
+      P = {
         name: "App",
         components: {
           MyHeader: h,
           MyList: x,
-          MyFooter: P
+          MyFooter: C
         },
         data: function () {
           return {
@@ -438,7 +444,7 @@
           this.$bus.$off("checkTodo"), this.$bus.$off("deleteTodo"), this.$bus.$off("updateTodo")
         }
       },
-      S = C,
+      S = P,
       N = (o("034f"), Object(u["a"])(S, i, r, !1, null, null, null)),
       I = N.exports;
     n["a"].config.productionTip = !1, new n["a"]({
@@ -451,15 +457,11 @@
     }).$mount("#app")
   },
   "590a": function (t, e, o) {},
-  8306: function (t, e, o) {},
   "85ec": function (t, e, o) {},
+  "8d43": function (t, e, o) {},
   "9f87": function (t, e, o) {
     "use strict";
     o("381c")
-  },
-  b9f9: function (t, e, o) {
-    "use strict";
-    o("8306")
   }
 });
-//# sourceMappingURL=app.ed87685b.js.map
+//# sourceMappingURL=app.fa80eb0d.js.map

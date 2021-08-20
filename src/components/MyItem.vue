@@ -29,7 +29,7 @@ export default {
     },
     //删除
     handleDelete(id) {
-      if (confirm("确定删除吗?")) {
+      if (confirm(`确定删除："${this.todo.title}" 吗?`)) {
         this.$bus.$emit("deleteTodo", id);
       }
     },

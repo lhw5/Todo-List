@@ -1,9 +1,11 @@
 <template>
-    <div class="todo-container">
+  <div class="todo-container">
+    <div class="todo-wrap">
       <MyHeader @addTodo="addTodo" />
       <MyList :todos="todos" />
       <MyFooter :todos="todos" @checkAllTodo="checkAllTodo" @clearAllTodo="clearAllTodo" />
     </div>
+  </div>
 </template>
 
 <script>
@@ -100,21 +102,6 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width:1024px) and (max-width:1920px){
-  .todo-container{
-    width: 500px;
-  }
-}
-@media screen and (min-width:414px) and (max-width:1024px){
-  .todo-container{
-    width: 350px;
-  }
-}
-@media screen and (max-width:414px){
-  .todo-container{
-    width: 100%;
-  }
-}
 body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -135,30 +122,30 @@ body {
 }
 
 .btn-danger {
-  position:absolute;
+  position: absolute;
   right: 2px;
   color: #fff;
-  background-color: #F56C6C;
-  border: 1px solid #F56C6C;
+  background-color: #f56c6c;
+  border: 1px solid #f56c6c;
 }
 
 .btn-edit {
-  position:absolute;
+  position: absolute;
   right: 56px;
   color: #fff;
   margin-right: 2px;
-  background-color: #67C23A;
-  border: 1px solid #67C23A;
+  background-color: #67c23a;
+  border: 1px solid #67c23a;
 }
 
 .btn-danger:hover {
   color: #fff;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .btn-edit:hover {
   color: #fff;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .btn:focus {
@@ -166,13 +153,37 @@ body {
 }
 
 .todo-container {
-  margin: 50px auto;
-  padding: 10px;
-  /* width: 360px; */
+  padding: 10px; 
   color: #606266;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 350px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 413px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 319px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 250px;
+  }
+}
+.todo-wrap{
 }
 
 input[type="checkbox"] {

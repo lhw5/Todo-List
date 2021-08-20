@@ -19,7 +19,7 @@
   border-color: #409eff
 }
 
-li[data-v-74570b9f] {
+li[data-v-6e33de79] {
   position: relative;
   list-style: none;
   height: 36px;
@@ -28,37 +28,37 @@ li[data-v-74570b9f] {
   border-bottom: 1px solid #dcdfe6
 }
 
-li label[data-v-74570b9f] {
+li label[data-v-6e33de79] {
   float: left;
   cursor: pointer
 }
 
-li label li input[data-v-74570b9f] {
+li label li input[data-v-6e33de79] {
   vertical-align: middle;
   margin-left: 6px;
   position: relative;
   top: -1px
 }
 
-li button[data-v-74570b9f] {
+li button[data-v-6e33de79] {
   display: none;
   margin-top: 3px;
   border-radius: 3px
 }
 
-li[data-v-74570b9f]:before {
+li[data-v-6e33de79]:before {
   content: normal
 }
 
-li[data-v-74570b9f]:last-child {
+li[data-v-6e33de79]:last-child {
   border-bottom: none
 }
 
-li[data-v-74570b9f]:hover {
+li[data-v-6e33de79]:hover {
   background: #f4f4f5
 }
 
-li:hover button[data-v-74570b9f] {
+li:hover button[data-v-6e33de79] {
   display: block
 }
 
@@ -132,24 +132,6 @@ li:hover button[data-v-74570b9f] {
   border-radius: 5px
 }
 
-@media screen and (min-width:1024px) and (max-width:1920px) {
-  .todo-container {
-    width: 500px
-  }
-}
-
-@media screen and (min-width:414px) and (max-width:1024px) {
-  .todo-container {
-    width: 350px
-  }
-}
-
-@media screen and (max-width:414px) {
-  .todo-container {
-    width: 100%
-  }
-}
-
 body {
   margin: 0;
   font-family: Avenir, Helvetica, Arial, sans-serif
@@ -201,12 +183,39 @@ body {
 }
 
 .todo-container {
-  margin: 50px auto;
   padding: 10px;
   color: #606266;
   border: 1px solid #dcdfe6;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+@media screen and (min-width:1024px) and (max-width:1920px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 500px
+  }
+}
+
+@media screen and (min-width:414px) and (max-width:1023px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 350px
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:413px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 90%
+  }
+}
+
+@media screen and (max-width:319px) {
+  .todo-container {
+    margin: 50px auto;
+    width: 250px
+  }
 }
 
 input[type=checkbox] {
